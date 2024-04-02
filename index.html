@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Proyecto M1</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Pagina Modulo</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Soy Johan Payan</h1>
+      <h2>Y esta es mi Pagina Web</h2>
+    </header>
+    <main>
+      <section>
+        <h3>¿Quien soy Yo?</h3>
+        <p>
+          Soy Johan Payan, un futuro programador full stack en JavaScript. Mi
+          objetivo es destacar como la mejor opción en el desarrollo web. Me
+          esfuerzo constantemente por mejorar mis habilidades técnicas y
+          creativas, combinando una sólida comprensión teórica con una habilidad
+          práctica excepcional. Valorando la colaboración y el trabajo en
+          equipo, estoy emocionado por hacer una diferencia significativa en la
+          industria a través de la innovación y la creatividad. ¡Espero tener la
+          oportunidad de trabajar juntos y llevar nuestros proyectos al
+          siguiente nivel!
+        </p>
+      </section>
+
+      <section>
+        <h3>Mis Tecnologias Favoritas</h3>
+        <div id="tech-container">
+          <li>
+            <img src="assets/imgs/html.png" alt="hmtl_image" />
+          </li>
+          <li>
+            <img src="assets/imgs/css.png" alt="css" />
+          </li>
+          <li>
+            <img src="assets/imgs/js.png" alt="javascript_image" />
+          </li>
+          <li>
+            <img src="assets/imgs/react.png" alt="react_image" />
+          </li>
+        </div>
+      </section>
+      <section id="form">
+        <form action="">
+          <label for="title"> Titulo </label>
+          <input type="text" id="title" required placeholder="Ejemplo: Programación"/>
+          <label for="description">Descripcion</label>
+          <textarea
+            name=""
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Ej: Lo mas divertido es centrar los divs..."
+            required
+          ></textarea>
+          <label for="imageUrl">Url De La imagen</label>
+          <input type="text" name="" id="imageUrl" required placeholder="htttp://urlDeImg.com"/>
+          <input type="button" value="Agregar Actividad" />
+        </form>
+      </section>
+      <section>
+        <h3>Actividades favoritas</h3>
+        <p>No se ha agregado ninguna actividad</p>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div class="footer-content">
+        <p>Hecho por Johan Payan</p>
+      </div>
+    </footer>
+  </body>
 </html>
