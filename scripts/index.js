@@ -1,3 +1,5 @@
+console.log("Esto es una prueba");
+
 const addBtn = document.getElementById("addBtn");
 
 class Activity {
