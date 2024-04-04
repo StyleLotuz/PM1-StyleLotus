@@ -54,7 +54,12 @@
       <section id="form">
         <form action="">
           <label for="title"> Titulo </label>
-          <input type="text" id="title" required placeholder="Ejemplo: Programación"/>
+          <input
+            type="text"
+            id="title"
+            required
+            placeholder="Ejemplo: Programación"
+          />
           <label for="description">Descripcion</label>
           <textarea
             name=""
@@ -65,13 +70,28 @@
             required
           ></textarea>
           <label for="imageUrl">Url De La imagen</label>
-          <input type="text" name="" id="imageUrl" required placeholder="htttp://urlDeImg.com"/>
+          <input
+            type="text"
+            name=""
+            id="imageUrl"
+            required
+            placeholder="htttp://urlDeImg.com"
+          />
           <input type="button" value="Agregar Actividad" />
         </form>
       </section>
-      <section>
+      <section id="activities">
         <h3>Actividades favoritas</h3>
         <p>No se ha agregado ninguna actividad</p>
+        <div class="cards_container">
+          <div class="card">
+            <img src="assets/imgs/images.jpeg" alt="" />
+            <div class="card_content">
+              <h2 class="card_title">NEW DESIGN MAS GRANDE</h2>
+              <p class="card_description">Lorem ipsum dolor sit amet Lorem</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer id="footer">

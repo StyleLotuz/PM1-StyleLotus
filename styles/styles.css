@@ -1,6 +1,6 @@
-html,
+/* html, */
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-36deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
@@ -50,7 +50,7 @@ li{
   list-style: none;
 }
 
-img {
+#tech-container img {
   width: 130px;
   height: 130px;
   transition: all .2s ease;
@@ -58,7 +58,7 @@ img {
 
 
 
-img:hover{
+#tech-container img:hover{
     transform: scale(1.5);
 }
 
@@ -174,5 +174,74 @@ input[type="button"]:hover{
   100%{
     background-position-x: 0;
   }
+}
+
+#activities{
+  margin: 2em;
+
+}
+
+#cards_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.card{
+  width: 160px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card img{
+  position: absolute;
+  width: 160px;
+  border-radius: 5px;
+}
+
+.card_content p{
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+}
+.card_content h2{
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.card_content{
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  cursor: pointer;
+  transform: translateY(47%);
+  transition: transform 0.3s;
+  
+}
+
+.card_content::before{
+  content: '';
+  position: absolute;
+  top: -52px;
+  right: -48px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: inset -48px -48px #fff;
+  z-index: -5;
+}
+
+.card_description{
+  color: #a18a96;
+}
+
+.card_content:hover{
+  transform: translateY(0);
 }
 
