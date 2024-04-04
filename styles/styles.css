@@ -188,17 +188,39 @@ input[type="button"]:hover{
 }
 
 .card{
+  position: relative;
   width: 160px;
   height: 250px;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.delete_button {
+  position: absolute;
+  top: 60px;
+  right: 5px;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.delete_button:hover {
+  background-color: #ff4c32;
 }
 
 .card img{
   position: absolute;
   width: 160px;
+  height: 200px;
   border-radius: 5px;
+  object-fit: cover ;
 }
 
 .card_content p{
@@ -206,6 +228,7 @@ input[type="button"]:hover{
   margin: 0;
   font-size: 15px;
 }
+
 .card_content h2{
   text-align: center;
   margin: 0;
@@ -221,7 +244,7 @@ input[type="button"]:hover{
   cursor: pointer;
   transform: translateY(47%);
   transition: transform 0.3s;
-  
+  border-radius: 5px;
 }
 
 .card_content::before{
